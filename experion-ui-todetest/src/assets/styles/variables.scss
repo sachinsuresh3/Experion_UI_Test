@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url('../fonts/roboto/Roboto-Regular.ttf')  format('truetype'),
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('RobotoThin'), url('../fonts/roboto/Roboto-Thin.ttf')  format('truetype'),
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('RobotoMedium'), url('../fonts/roboto/Roboto-Medium.ttf')  format('truetype'),
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('RobotoBold'), url('../fonts/roboto/Roboto-Bold.ttf')  format('truetype'),
+}
+
+$Roboto: "Roboto", sans-serif;
+
+// Colors
+$dark: #041131;
+$light-800: rgba(4, 17, 49, 0.8);
+$light-700: rgba(4, 17, 49, 0.7);
+$light-600: rgba(4, 17, 49, 0.6);
+$light: #ffffff;
+$black: #000000;
+$red: #FF1D00;
+
+$main-bg: #E5E5E5;
+$light-bg: #E8E8FF;
+$dark-bg: #0F255F;
+$primary-bg: #1750FF;
+$primary-bg100: #0F42DF;
+$input-bg: #FCFCFF;
+$border-color: #E5E5EC;
+$transparent: transparent;
+$overlay-bg: #071538;
+$closebtn-bg: #F6F9FE;
+
+$alpha-primary-bg100: rgba(23, 81, 255, 0.100);
+$alpha-primary-bg900: rgba(23, 81, 255, 0.900);
+$alpha-dark-bg800: rgba(15, 36, 95, 0.800);
+$alpha-overlay-bg700: rgba(7, 21, 56, 0.700);
+
+
+@mixin breakpoint($points) {
+    @if $points == md {
+        // break point 768px
+        @media(min-width: 768px) {
+            @content;
+        }
+    }
+}
